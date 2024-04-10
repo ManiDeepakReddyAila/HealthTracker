@@ -2,15 +2,6 @@
 
 ## Application Link: http://localhost:8501
 
-[![FastAPI Unit Tests](https://github.com/BigDataIA-Spring2023-Team-03/Stock_Analysis_Summarizer/actions/workflows/pytest.yml/badge.svg)](https://github.com/BigDataIA-Spring2023-Team-03/Stock_Analysis_Summarizer/actions/workflows/pytest.yml)
-
-# Code Coverage - CodeCov
-Integrated our repository with the CodeCov to get the code coverage with the tests written. <br>
-Below is the codecoverage showing different files of the fastapi module of Stock Analysis Summarizer.<br>
-<img src="https://codecov.io/gh/BigDataIA-Spring2023-Team-03/Stock_Analysis_Summarizer/branch/main/graphs/sunburst.svg?token=NGU9K01WWF" alt="Code Coverage" width="200" height="200">
-
-[![Code Coverage](https://codecov.io/gh/BigDataIA-Spring2023-Team-03/Stock_Analysis_Summarizer/branch/main/graph/badge.svg?token=NGU9K01WWF)](https://codecov.io/gh/BigDataIA-Spring2023-Team-03/Stock_Analysis_Summarizer)
-
 # Overview
 
 This project highlights the focus on advanced medical devices developed by  following the software engineering principles as laid down by IEC 62304. The aim of this project is to collect user’s workout information from their Apple Health application and enhance their health and fitness goals. Personalized Health Coach is an application that provides insights into user’s health data and enables to do a question-answering about their workout activities
