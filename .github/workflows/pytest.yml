@@ -21,12 +21,12 @@ jobs:
       run:
         python -m pip install --upgrade pip
         pip install -r src/requirements.txt
-        pip install pytest
+        pip install pytest pytest-cov codecov
 
     - name: Run unit tests
       env:
         PYTHONPATH: ./test
-      run: python3 -m pytest test/* --cov=. --cov-report html
+      run: python3 -m pytest test/* --cov=./ --cov-report html
 
     - name: Code Coverage
       uses: codecov/codecov-action@v2.1.0
