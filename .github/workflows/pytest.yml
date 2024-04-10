@@ -1,0 +1,33 @@
+name: Unit Tests
+
+on:
+  push:
+    branches: [dev]
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r src/requirements.txt
+
+    - name: Run unit tests
+      env:
+        PYTHONPATH: ./test
+      run: pytest test/* --cov=. --cov-report html
+
+    - name: Code Coverage
+      uses: codecov/codecov-action@v2.1.0
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
