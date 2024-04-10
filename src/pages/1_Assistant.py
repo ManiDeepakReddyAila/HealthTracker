@@ -15,11 +15,6 @@ HEALTH_RECORD_FILE = "data/records_data.csv"
 HEALTH_WORKOUT_FILE = "data/workouts_data.csv"
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-if not st.session_state['name'] or not st.session_state['age'] or not st.session_state:
-    st.error("Enter the details in Home Page")
-    time.sleep(2)
-    switch_page('Home')
-
 st.sidebar.header("Assistant")
 
 
@@ -60,7 +55,6 @@ if "messages" not in st.session_state:
             "content": f"Hi {NAME}! I hope you're having a great day. How can I help you?",
         }
     ]
-
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 

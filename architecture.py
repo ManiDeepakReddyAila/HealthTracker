@@ -5,14 +5,14 @@ from diagrams.onprem.container import Docker
 from diagrams.onprem.client import User
 
 with Diagram("Personalised Health Tracker", show=False, direction="LR"):
-    apple_health = Custom("", "/Users/pranitha/Desktop/AlgoDM/PHC/assets/apple_health.png")
-    xml_data = Custom("", "/Users/pranitha/Desktop/AlgoDM/PHC/assets/xml.jpeg")
-    csv_data = Custom("", "/Users/pranitha/Desktop/AlgoDM/PHC/assets/csv.jpeg")
-    openai = Custom("", "/Users/pranitha/Desktop/AlgoDM/PHC/assets/openai.webp")
+    apple_health = Custom("", "/Users/pranitha/Desktop/AlgoDM/HealthTracker/assets/apple_health.png")
+    xml_data = Custom("", "/Users/pranitha/Desktop/AlgoDM/HealthTracker/assets/xml.jpeg")
+    csv_data = Custom("", "/Users/pranitha/Desktop/AlgoDM/HealthTracker/assets/csv.jpeg")
+    openai = Custom("", "/Users/pranitha/Desktop/AlgoDM/HealthTracker/assets/openai.webp")
     pandas_df = Python("Pandas DataFrame")
-    dashboard = Custom("", "/Users/pranitha/Desktop/AlgoDM/PHC/assets/dashboard.png")
+    dashboard = Custom("", "/Users/pranitha/Desktop/AlgoDM/HealthTracker/assets/dashboard.png")
 
-    streamlit = Custom("Streamlit", "/Users/pranitha/Desktop/AlgoDM/PHC/assets/streamlit.jpeg")
+    streamlit = Custom("Streamlit", "/Users/pranitha/Desktop/AlgoDM/HealthTracker/assets/streamlit.jpeg")
 
     user = User("User")
 

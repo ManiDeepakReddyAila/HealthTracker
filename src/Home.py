@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 
 st.set_page_config(page_title="Home", page_icon="🏠")
 
@@ -33,6 +32,13 @@ def set_variables():
             st.experimental_rerun()
 
         show_health_tracker()
+        st.markdown("""
+            <style>
+                section[data-testid="stSidebar"][aria-expanded="true"]{
+                    display: none;
+                }
+            </style>
+            """, unsafe_allow_html=True)
     else:
         show_health_tracker()
 
