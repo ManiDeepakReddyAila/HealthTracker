@@ -27,7 +27,7 @@ This project highlights the focus on advanced medical devices developed by  foll
 ![](https://img.shields.io/badge/Apple%20Health-blue?style=for-the-badge&logo=apple&logoColor=white)
 
 # Architecture
-![Architecture_diagram](https://github.com/ManiDeepakReddyAila/HealthTracker/blob/main/data/personalised_health_tracker.png)
+![Architecture_diagram](https://github.com/ManiDeepakReddyAila/HealthTracker/blob/main/personalised_health_tracker.png)
 
 # Application Workflow
 - User enters basic details like name, age and gender in the Streamlit web interface.
