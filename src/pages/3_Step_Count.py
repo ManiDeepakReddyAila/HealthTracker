@@ -1,6 +1,4 @@
 import os
-import datetime
-import time
 import pandas as pd
 import streamlit as st
 import time
@@ -15,7 +13,7 @@ from streamlit_plotly_events import plotly_events
 load_dotenv()
 AGE = 25
 GENDER = "Female"
-STEP_TARGET = 3000  # Fixed step target
+STEP_TARGET = 3000
 HEALTH_RECORD_FILE = 'data/records_data.csv'
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
@@ -105,6 +103,7 @@ if selected_points:
                 Today's step count: {selected_points[0]['y']}
                 Age: {AGE}
                 Gender: {GENDER}
+                Target step count: {STEP_TARGET}
                 """
 
         st_callback = StreamlitCallbackHandler(parent_container=coach_says)
