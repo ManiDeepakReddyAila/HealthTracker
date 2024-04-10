@@ -18,10 +18,6 @@ HEALTH_RECORD_FILE = 'data/records_data.csv'
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 st.set_page_config(page_title="Step Count", page_icon="🚶")
-if not st.session_state['name'] or not st.session_state['age'] or not st.session_state:
-    st.error("Enter the details in Home Page")
-    time.sleep(2)
-    switch_page('Home')
 
 st.sidebar.header("Step Count")
 st.sidebar.write(

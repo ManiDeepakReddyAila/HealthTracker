@@ -32,6 +32,13 @@ def set_variables():
             st.experimental_rerun()
 
         show_health_tracker()
+        st.markdown("""
+            <style>
+                section[data-testid="stSidebar"][aria-expanded="true"]{
+                    display: none;
+                }
+            </style>
+            """, unsafe_allow_html=True)
     else:
         show_health_tracker()
 

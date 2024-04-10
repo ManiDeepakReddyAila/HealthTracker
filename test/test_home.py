@@ -1,12 +1,12 @@
 from streamlit.testing.v1 import AppTest
 
 def test_show_health_tracker():
-    at = AppTest.from_file("../src/Home.py", default_timeout=30)
+    at = AppTest.from_file("/Users/manideepakreddyaila/Desktop/projects/HealthTracker/src/Home.py", default_timeout=30)
     at.run()
     assert at.markdown[0].value == "# Health Tracker"
 
 def test_initial_session_state():
-    at = AppTest.from_file("../src/Home.py", default_timeout=30)
+    at = AppTest.from_file("/Users/manideepakreddyaila/Desktop/projects/HealthTracker/src/Home.py", default_timeout=30)
     at.run()
     assert at.session_state['name'] == None
     assert at.session_state['age'] == None
@@ -14,7 +14,7 @@ def test_initial_session_state():
     assert "Enter all the details"  in at.error[0].value
 
 def test_set_variables():
-    at = AppTest.from_file("../src/Home.py", default_timeout=30)
+    at = AppTest.from_file("/Users/manideepakreddyaila/Desktop/projects/HealthTracker/src/Home.py", default_timeout=30)
     at.run()
     at.text_input[0].set_value("Mani Deepak").run()
     at.selectbox[0].set_value("Male").run()
