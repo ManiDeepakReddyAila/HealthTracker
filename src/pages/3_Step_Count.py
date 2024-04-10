@@ -11,8 +11,8 @@ from langchain.schema import HumanMessage, SystemMessage
 from streamlit_plotly_events import plotly_events
 
 load_dotenv()
-AGE = 25
-GENDER = "Female"
+AGE = st.session_state['age']
+GENDER = st.session_state['gender']
 STEP_TARGET = 3000
 HEALTH_RECORD_FILE = 'data/records_data.csv'
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
