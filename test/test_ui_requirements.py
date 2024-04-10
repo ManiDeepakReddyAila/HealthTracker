@@ -26,7 +26,6 @@ def test_set_targets_positive():
     at.run()
     at.number_input[1].set_value(170).run()
     at.button[0].click().run()
-    at.button[0].click().run()
     assert at.session_state["maximum_heart_rate"] == 170
 
 def test_set_targets_negative():
